@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray","memory","cpu","temperature","network","bluetooth", "pulseaudio", "battery","hyprland/language"],
+  "modules-right": ["tray","memory","cpu","temperature","network","bluetooth", "pulseaudio","backlight", "battery","hyprland/language"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -75,6 +75,12 @@
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
       "on-click": "blueman-manager"
 
+  },
+
+  "backlight": {
+      "format": "  {percent}%",
+      "on-scroll-up": "brightnessctl set 5%+",
+      "on-scroll-down": "brightnessctl set 5%-"
   },
 
   "tray": {
