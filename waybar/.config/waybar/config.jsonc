@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray","memory","cpu","temperature","network","bluetooth", "pulseaudio","backlight", "battery","hyprland/language"],
+  "modules-right": ["memory","cpu","temperature","network","bluetooth", "pulseaudio","backlight", "battery","hyprland/language"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -55,7 +55,7 @@
   },
 
   "memory": {
-      "format": " {}%",
+      "format": " {used:0.1f}GiB / {total:0.1f}GiB",
       "interval": 1
   },
 
